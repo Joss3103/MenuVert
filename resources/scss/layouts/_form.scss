@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;800&display=swap");
+
+.form-register {
+    
+    
+
+    &__date {
+    }
+    &__h3 {
+      
+    }
+    &__input {
+        display: block;
+    }
+    &__input-firstname {
+      width: 100px;
+      display: inline-block;
+    }
+    &__input-lastname {
+        width: 100px;
+        display: inline-block;
+    }
+    &__label {
+        
+    }
+    &__option {
+    }
+    &__select {
+    }
+}
+
+.form {
+}
+.form-container {
+    font-family: "Rubik", sans-serif;
+    width: 100%;
+    height: 1080px;
+    background-image: url("../../../public/img/pexels-asad-photo-maldives-3155666.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+}
+.form-more {
+    width: 50%;
+    align-items: center;
+    padding-top: 20%;
+    padding-left: 2%;
+  &__button {
+    background: none;
+    border: none;
+    background-color: #ff4e50;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin-top: 15px;
+    color: white;
+  }
+  &__h2 {
+    font-size: 3em;
+    font-weight: 800;
+    color: white;
+    width: 350px;
+}
+&__p {
+    margin-top: 10px;
+    text-align: justify;
+    color: white;
+    font-weight: 400;
+    font-size: 1.1rem;
+    width: 70%;
+}
+}
+.form-register {
+    margin-top: 10%;
+    background-color: #3B3B3B;
+    opacity: 0.8;
+    color: white;
+    max-width: 30%;
+    height: 50%;
+    margin-left: 5%;
+    border-radius: 5px;
+    padding-top: 30px;
+    padding-left: 60px;
+  &__button {
+  }
+  &__date {
+  }
+  &__h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 3em;
+    width: 70%;
+    margin-left: 15%;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  &__input {
+  }
+  &__input-firstname {
+  }
+  &__input-lastname {
+  }
+  &__label-checkin {
+  }
+  &__label-checkout {
+  }
+  &__label-email {
+  }
+  &__label-firstname {
+  }
+  &__label-lastname {
+  }
+  &__label-nguest {
+  }
+  &__label-room {
+  }
+  &__option {
+  }
+  &__select {
+  }
+}

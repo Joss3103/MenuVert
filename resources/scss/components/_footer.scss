@@ -1,0 +1,85 @@
+.footer{
+ 
+    color: white;
+    bottom: 0;
+    width: 100%;
+    background-color: #53673E;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   height: 220px;
+   font-family: "Nunito", sans-serif;
+
+}
+.footer-about {
+  margin-bottom: 3px;
+  text-align: justify;
+  width: 600px;
+  margin-left: 20px;
+  &__adress {
+color: white;
+padding-top: 10px;
+  }
+  &__adress-a {
+    font-weight: 700;
+    color: #F0FF42;
+  }
+  &__adress-span {
+    font-weight: 700;
+  }
+  &__h4 {
+    font-size: 20px;
+    color: #F0E2A4;
+    font-weight: 700;
+    font-family: "Merriweather";
+    margin-bottom: 10px;
+  }
+  &__p {
+    font-weight: 600;
+  }
+}
+.footer-container{
+
+display: flex;
+justify-content: center;
+  background-color: #53673E;
+  
+  .footer-cite {
+    font-family: "Nunito", sans-serif;
+    width: auto;
+    bottom: 0px;
+   color: white;
+  
+   }
+   
+}
+
+.footer-company {
+  margin-bottom: 3px;
+  text-align: center;
+  &__h4 {
+    font-size: 20px;
+  }
+  &__lista {
+    margin-top: 10px;
+    list-style: none;
+  }
+  &__lista-item {
+    
+  }
+}
+.footer-services {
+  margin-bottom: 3px;
+  text-align: center;
+  &__h4 {
+   
+    font-size: 20px;
+  }
+  &__lista {
+    margin-top: 10px;
+    list-style: none;
+  }
+  &__lista-item {
+  }
+}
+

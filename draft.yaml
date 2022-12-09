@@ -1,0 +1,143 @@
+models:
+    Rol:
+        nombre: char 
+        relationships:
+            belongsTo: rol_operacion,Usuario
+    rol_operacion:
+        idRol: double 
+        idOperacion: double 
+        relationships:
+            belongsTo: Rol,Operacion
+    Usuario:
+        nombre: char 
+        apellido: char 
+        correo: char 
+        contraseña: char 
+        idRol: double 
+        relationships:
+            belongsTo: Rol
+    Operacion:
+        nombre: char 
+        idModulo: double 
+        relationships:
+            belongsTo: rol_operacion,Modulo
+    Modulo:
+        Modulo: char 
+        relationships:
+            belongsTo: Operacion
+    Compra:
+        fecha: dateTimeTz 
+        monto: double 
+        lugar: char 
+        idCliente: double 
+        relationships:
+            belongsTo: Cliente,Detalle_compra
+    Detalle_compra:
+        idMenu: double 
+        idbebida: double 
+        idVenta: double 
+        cantidad: double 
+        precio: double 
+        idDestino: char 
+        relationships:
+            belongsTo: Compra
+    Cliente:
+        nombre: char 
+        apellido: char 
+        correo: char 
+        contraseña: char 
+        idDestino: double 
+        relationships:
+            belongsTo: Reservacion,Compra,Productos
+    Productos:
+        idMenu: double 
+        idBebida: double 
+        relationships:
+            belongsTo: bebida,Menu,Cliente,Destino
+    bebida:
+        idcategoria: double 
+        descripcion: char 
+        precio: double 
+        stock: double 
+        relationships:
+            belongsTo: Productos,categoria
+    Destino:
+        iddireccion: double 
+        costoDestino: double 
+        relationships:
+            belongsTo: Productos,Direccion
+    Direccion:
+        nombre: char 
+        relationships:
+            belongsTo: Destino
+    Platos:
+        idcategoria: double 
+        descripcion: char 
+        precio: double 
+        relationships:
+            belongsTo: Menu,categoria
+    categoria:
+        tipo: char 
+        relationships:
+            belongsTo: Platos,bebida
+    Mesa:
+        disponible: char 
+        idtipo: double 
+        relationships:
+            belongsTo: Reservacion,TipoMesa
+    TipoMesa:
+        Seccion: char 
+        relationships:
+            belongsTo: Mesa
+    Menu:
+        idplatos: double 
+        fecha: dateTime 
+        stock: double 
+        relationships:
+            belongsTo: Productos,Platos
+    Reservacion:
+        numPersonas: double 
+        fecha: dateTime 
+        idCliente: double 
+        idMesa: double 
+        hora: time 
+        relationships:
+            belongsTo: Mesa,Cliente
+seeders: Rol, , rol_operacion, Usuario, Operacion, Modulo, Compra, Detalle_compra, Cliente, Productos, bebida, Destino, Direccion, Platos, categoria, Mesa, TipoMesa, Menu, Reservacion
+controllers:
+    Rol:
+        resource: web
+    rol_operacion:
+        resource: web
+    Usuario:
+        resource: web
+    Operacion:
+        resource: web
+    Modulo:
+        resource: web
+    Compra:
+        resource: web
+    Detalle_compra:
+        resource: web
+    Cliente:
+        resource: web
+    Productos:
+        resource: web
+    bebida:
+        resource: web
+    Destino:
+        resource: web
+    Direccion:
+        resource: web
+    Platos:
+        resource: web
+    categoria:
+        resource: web
+    Mesa:
+        resource: web
+    TipoMesa:
+        resource: web
+    Menu:
+        resource: web
+    Reservacion:
+        resource: web

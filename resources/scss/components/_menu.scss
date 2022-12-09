@@ -1,0 +1,131 @@
+.menu-card-nav{
+    height: 7vh;
+    background-color: #000000;
+
+}
+.menu-card-sec{
+    height: 14vh;
+    background-color: #ffe58e;
+    border-bottom: 2px solid rgb(194, 130, 35);
+    &__h1{
+        position: absolute;
+        font-size: 70px;
+        font-family: 'Salsa';
+        margin-top: 10px;
+        margin-left: 40px;
+
+    }
+}
+.menu-card{
+    height: 50vh;
+    //width: 50%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    border-bottom: 2px solid rgb(194, 130, 35);
+    background-color: #F0E2A4;
+    display: flex;
+
+
+    .menu-card-container{
+        position: absolute;
+
+        &__h1{
+            color: #51861C;
+            font-size: 50px;
+            margin-top: 40px;
+            margin-left: 30px;
+        }
+        &__img{
+            width: 400px;
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+        &__price{
+            position: absolute;
+            width: 200px;
+            font-size: 30px;
+            font-weight: bold;
+            left: 480px;
+            top: 330px;
+        }
+        &__description{
+            position: absolute;
+            width: 300px;
+            text-align: justify;
+            font-size: 25px;
+            left: 480px;
+            top: 150px;
+        }
+        &__form{
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            left: 800px;
+            top: 330px;
+        }
+        &__input{
+            margin-left: 10px;
+            width: 60px;
+            height: 35px;
+            font-size: 25px;
+            border: none;
+            border-radius: 3px;
+            background-color: #ffffff;
+            box-shadow: 1px 5px 8px rgb(92, 92, 92);
+            text-align: center;
+        }
+        &__label{
+            font-size: 25px;
+        }
+        &__add{
+            width: 80px;
+            height: 45px;
+            margin-top: 30px;
+            margin-left: 20px;
+            border-radius: 50px;
+            border: none;
+            background-color: #94f731;
+            font-size: 25px;
+            font-family: 'Salsa';
+            cursor: pointer;
+            &:hover{
+                background-color: #bdff77;
+                border: #94f731 solid 2px;
+            }
+        }
+        &__buy{
+            width: 80px;
+            height: 45px;     
+            margin-left: 5px;
+            border-radius: 50px;       
+            border: none;
+            background-color: #94f731;
+            font-size: 25px;
+            font-family: 'Salsa';
+            cursor: pointer;
+            &:hover{
+                background-color: #bdff77;
+                border: #94f731 solid 2px;
+            }
+        }
+    }
+
+    .menu-card-container1{
+        position: absolute;
+        left: 50%;
+        height: 50vh;
+        border-left: 2px solid rgb(194, 130, 35);
+    }
+    
+}
+
+.container{
+    background-color: #ffe58e;
+    padding-top: 70px;
+}
+
+.containerS{
+    background-color: #ffe58e;
+}

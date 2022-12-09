@@ -1,0 +1,62 @@
+.galeria {
+    font-family: 'Sansita Swashed', cursive;
+    position: relative;
+    background: url(../../../public/img/galeria/galeria-fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+
+
+    &__h2 {
+        font-size: 3.5rem;
+        text-align: center;
+        font-family: 'Salsa', cursive;
+        color: #4E4E4E;
+
+    }
+    &__imagenes {
+        
+        align-items: center;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 90px;
+        margin: 40px auto;
+        margin-bottom: 40px;
+
+    }
+    &__img{
+        width: 90%;
+        cursor: pointer;
+        transition: 2s;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px  rgba(2, 135, 53, 0.315);
+
+    }
+    &__span {
+       
+        color: #4E4E4E;
+    }
+    &__sub {
+        font-weight: 500;
+        color:#FF4E50;
+        margin-left: 3%;
+        font-size: 3rem;
+        font-family: 'Sansita Swashed', cursive;
+
+    }
+    &__button{
+        font-size: 2rem;
+        padding: 10px;
+        color: white;
+        background: none;
+        border: none;
+        background-color: #FF4E50;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        float: right;
+        margin-right: 5%;
+        
+    }
+}

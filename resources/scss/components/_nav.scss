@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+$color-nav: #151517;
+$fuenteMerri: "Merriweather";
+$color-items-nav: #519548;
+$fuenteDMsans: "DM Sans", sans-serif;
+
+.navbar {
+    z-index: 1;
+    //padding: 10px;
+    top: 0;
+    position: fixed;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*  background-color: $color-nav; */
+    width: 100%;
+    /*  transition: 0.7s; */
+    &__button {
+        background: none;
+        border: none;
+        margin-top: -20px;
+        margin-left: 0px;
+        &--login {
+            cursor: pointer;
+            background-color: white;
+            margin-left: 0px;
+            padding: 10px 10px;
+            border-radius: 50%;
+            font-size: 25px;
+            
+        }
+        &--reservacion {
+            font-size: 25px;
+            margin-right: 20px;
+            background-color: white;
+            width: auto;
+            margin-top: -30px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            overflow-wrap: break-word;
+            color: white;
+            background-color: #ff4242;
+            font-family: "Nunito", sans-serif;
+            cursor: pointer;
+        }
+    }
+    &__logo {
+        padding-left: 0px;
+        width: 200px;
+        cursor: pointer;
+    }
+    &__p {
+        color: white;
+        font-family: $fuenteMerri;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    &__span {
+        display: block;
+        font-family: $fuenteDMsans;
+        color: #519548;
+        font-size: 20px;
+        padding-left: 15px;
+    }
+}
+.listanav {
+    width: 550px;
+    //margin: 0px 20%;
+    margin-left: 20%;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    
+
+    &__a {
+        text-decoration: none;
+        color: #519548;
+        font-size: 1.3rem;
+    }
+    &__a:hover {
+        color: white;
+    }
+    &__item {
+        margin: 0px 20px;
+        display: inline-block;
+        list-style: none;
+    }
+}
+
+.nav-item{
+    position: absolute;
+    margin-left: 85%;
+    top: -12px;
+    .badge{
+        width: 40px;
+        align-content: center;
+    }
+}
+
+.dropdown {
+    &__button {
+        cursor: pointer;
+        position: relative;
+        background: none;
+        border: none;
+        color: #519548;
+        font-size: 1.3rem;
+        margin-right: 20px;
+        &--chevron {
+            padding-top: 5px;
+            font-size: 15px;
+            position: absolute;
+        }
+    }
+    &__button:hover {
+        color: white;
+    }
+    &__content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;       
+    }
+    &__content:cursor {
+    }
+
+    &__item {
+        list-style: none;
+    }
+    &__link {
+        text-decoration: none;
+    }
+    &__lista {
+
+    }
+}
+.dropdown:hover .dropdown__content {
+    display: block;
+}
